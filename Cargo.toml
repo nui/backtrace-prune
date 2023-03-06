@@ -1,0 +1,21 @@
+[package]
+description = "A library to prune backtrace"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+name = "backtrace_prune"
+version = "0.1.0"
+repository = "https://github.com/nui/backtrace-prune"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nom = "7"
+ref-cast = "1"
+
+[dev-dependencies]
+indoc = "2"
+criterion = "0.4"
+
+[[bench]]
+name = "benchmark"
+harness = false
